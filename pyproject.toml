@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fastapi-task"
+version = "0.1.0"
+description = ""
+authors = ["lavrik91 <lavrik2837@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["all"], version = "^0.24.0.post1"}
+asyncio = "^3.4.3"
+aiohttp = "^3.9.0"
+ping3 = "^4.0.4"
+mypy = "^1.7.0"
+sqlalchemy = "^2.0.23"
+celery = "^5.3.6"
+alembic = "^1.12.1"
+aiosqlite = "^0.19.0"
+
+
+[tool.poetry.group.dev.dependencies]
+sqlalchemy = "^2.0.23"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
